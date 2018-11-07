@@ -25,7 +25,8 @@ namespace WordDictionary
 		{
 			listBox.Items.Clear();
 			buttonGet.Enabled = false;
-			Task.Run(() => GetWords());
+			Task.Run(() => GetWords()); 
+
 		}
 
 		private void GetWords()
