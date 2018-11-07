@@ -28,13 +28,55 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.textBoxURI = new System.Windows.Forms.TextBox();
+			this.buttonGet = new System.Windows.Forms.Button();
+			this.listBox = new System.Windows.Forms.ListBox();
+			this.SuspendLayout();
+			// 
+			// textBoxURI
+			// 
+			this.textBoxURI.Location = new System.Drawing.Point(13, 13);
+			this.textBoxURI.Name = "textBoxURI";
+			this.textBoxURI.Size = new System.Drawing.Size(416, 20);
+			this.textBoxURI.TabIndex = 0;
+			// 
+			// buttonGet
+			// 
+			this.buttonGet.Location = new System.Drawing.Point(448, 9);
+			this.buttonGet.Name = "buttonGet";
+			this.buttonGet.Size = new System.Drawing.Size(75, 23);
+			this.buttonGet.TabIndex = 1;
+			this.buttonGet.Text = "Get";
+			this.buttonGet.UseVisualStyleBackColor = true;
+			// 
+			// listBox
+			// 
+			this.listBox.FormattingEnabled = true;
+			this.listBox.Location = new System.Drawing.Point(13, 40);
+			this.listBox.Name = "listBox";
+			this.listBox.Size = new System.Drawing.Size(416, 394);
+			this.listBox.TabIndex = 2;
+			// 
+			// Form1
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(541, 450);
+			this.Controls.Add(this.listBox);
+			this.Controls.Add(this.buttonGet);
+			this.Controls.Add(this.textBoxURI);
+			this.Name = "Form1";
+			this.Text = "WebDictionary";
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 
 		#endregion
+
+		private System.Windows.Forms.TextBox textBoxURI;
+		private System.Windows.Forms.Button buttonGet;
+		private System.Windows.Forms.ListBox listBox;
 	}
 }
 
